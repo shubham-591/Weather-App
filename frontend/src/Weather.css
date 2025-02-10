@@ -1,0 +1,172 @@
+/* /* .weather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-self: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #2f4680, #500ae4);
+}
+.search-input {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* .weather {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+  } */
+  
+/* .weather-container {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: linear-gradient(to right, #d9a8ff, #a5a5ff);
+font-family: Arial, sans-serif;
+}
+
+.weather-card {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px 30px;
+border-radius: 20px;
+background: linear-gradient(45deg, #2f4680, #500ae4);
+box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+color: white;
+width: 300px;
+text-align: center;
+}
+
+.search-bar {
+display: flex;
+align-items: center;
+width: 100%;
+margin-bottom: 20px;
+background: white;
+border-radius: 20px;
+padding: 5px 10px;
+}
+
+.search-input {
+border: none;
+outline: none;
+width: 100%;
+padding: 10px;
+border-radius: 15px;
+}
+
+.search-button img {
+width: 20px;
+height: 20px;
+cursor: pointer;
+}
+
+.weather-icon img {
+width: 60px;
+height: 60px;
+margin: 10px 0;
+}
+
+.weather-details {
+display: flex;
+justify-content: space-around;
+width: 100%;
+margin-top: 20px;
+font-size: 14px;
+}
+
+.weather-detail {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.weather-detail img {
+width: 24px;
+height: 24px;
+margin-bottom: 5px;
+} */
+
+.weather{
+    place-self: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #2f4680, #500ae4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between input and search button */
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.search-bar input{
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: #626262;
+    background: #ebfffc;
+    font-size: 18px;
+}
+.search-bar img{
+width: 50px;
+padding: 15px;
+border-radius: 50%;
+background: #ebfffc;
+cursor: pointer;
+}
+
+.weather-icon {
+    width: 150px;
+    margin: 30px 0;
+}
+
+.temperature {
+    color: #fff;
+    font-size: 60px;
+    line-height: 1;
+}
+
+.location {
+    color: #fff;
+    font-size: 40px;
+}
+
+.weather-data {
+    width: 100%;
+    margin: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.weather-data .col {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 22px;
+}
+
+.weather-data .col span {
+    display: block;
+    font-size: 15px;
+}
+
+.weather-data .col img {
+    width: 25px;
+    margin-top: 10px;
+}
