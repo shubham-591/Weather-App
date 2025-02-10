@@ -12,12 +12,13 @@ const PORT = process.env.PORT || 5000;
 
 const allowedOrigins = [
     "http://localhost:5174",  // Allow local frontend
-    "https://weather-4ll9nubw8-shubhams-projects-3f44c3ff.vercel.app" // Allow deployed frontend
+    // "https://weather-4ll9nubw8-shubhams-projects-3f44c3ff.vercel.app" // Allow deployed frontend
+    "https://weather-app.vercel.app" // Your permanent frontend domain
 ];
 
 app.use(cors({
     origin: function (origin, callback) {
-        if (!origin || allowedOrigins.includes(origin)) {
+        if (!origin || allowedOrigins.includes(origin) || origin.endsWith(".vercel.app")) {
             callback(null, true);
         } else {
             callback(new Error("Not allowed by CORS"));
