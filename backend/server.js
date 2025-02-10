@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 
 const allowedOrigins = [
     "http://localhost:5174",  // Allow local frontend
-    "https://weather-i3aza1fj7-shubhams-projects-3f44c3ff.vercel.app" // Allow deployed frontend
+    "https://weather-4ll9nubw8-shubhams-projects-3f44c3ff.vercel.app" // Allow deployed frontend
 ];
 
 app.use(cors({
