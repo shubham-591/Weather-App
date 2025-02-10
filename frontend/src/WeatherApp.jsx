@@ -60,7 +60,9 @@ const WeatherApp = () => {
 
     try {
       // const url = `# https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${import.meta.env.OPENWEATHER_API_KEY}`;
-      const url = `http://localhost:5003/weather/${city}`;
+      // const url = `http://localhost:5003/weather/${city}`;
+      const API_URL = "https://weather-app-2jrm.onrender.com";  // Use deployed backend URL
+      const url = `${API_URL}/weather/${city}`;
 
       const response = await fetch(url);
       const data = await response.json();
